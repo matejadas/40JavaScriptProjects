@@ -1,0 +1,50 @@
+body {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  width: 50%;
+  margin: auto;
+}
+
+h1, h2, h3 {
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+h1 {
+  font-size: 28px;
+}
+
+h2 {
+  font-size: 24px;
+}
+
+h3 {
+  font-size: 22px;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+a .tarjeta {
+  width: 60%;
+  margin: auto;
+  margin-bottom: 16px;
+  border-radius: 8px;
+  padding: 5px;
+  border: 1px solid LightGray;
+  -webkit-box-shadow: 6px 6px 3px Darkgray;
+          box-shadow: 6px 6px 3px Darkgray;
+}
+
+a .tarjeta:hover {
+  border: 1px solid LightGray;
+  -webkit-box-shadow: 6px 6px 3px Darkgray;
+          box-shadow: 6px 6px 3px Darkgray;
+  -webkit-transform: translate(-2%, -2%);
+          transform: translate(-2%, -2%);
+}
+
+a .tarjeta p {
+  font-size: 14px;
+}
+/*# sourceMappingURL=estilos.css.map */
