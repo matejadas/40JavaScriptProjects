@@ -1,0 +1,65 @@
+body {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  width: 50%;
+  margin: auto;
+}
+
+h1, h2, h3 {
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+h1 {
+  font-size: 28px;
+}
+
+h2 {
+  font-size: 24px;
+}
+
+h3 {
+  font-size: 22px;
+}
+
+#contInfo {
+  height: 6vh;
+  padding: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  border: 1px solid tomato;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#contInfo #colorActual {
+  width: 30%;
+  font-weight: bold;
+}
+
+#contInfo #btnCambiar {
+  border: 2px solid black;
+  padding: 5px;
+  border-radius: 8px;
+  color: black;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  cursor: default;
+}
+
+#contInfo #btnCambiar:hover {
+  -webkit-transform: translate(-2%, -2%);
+          transform: translate(-2%, -2%);
+}
+/*# sourceMappingURL=estilos1.css.map */

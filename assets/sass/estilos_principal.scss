@@ -1,0 +1,52 @@
+$colorNegro: black;
+$grisClaro: LightGray;
+$gris: Darkgray;
+$grisOscuro: DimGray;
+
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    width: 50%;
+    margin: auto;
+}
+
+h1, h2, h3 {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+h1 {
+    font-size: 28px;
+}
+
+h2 {
+    font-size: 24px;
+}
+
+h3 {
+    font-size: 22px;
+}
+
+.tarjeta {
+    width: 60%;
+    margin: auto;
+    margin-bottom: 16px;
+    border-radius: 8px;
+    padding: 5px;
+    border: 1px solid $grisClaro;
+    box-shadow: 6px 6px 3px $gris;
+    
+    &:hover {
+        border: 1px solid $gris;
+        box-shadow: 6px 6px 3px $grisOscuro;
+        transform: translate(-2%, -2%);
+    }
+    
+    a {
+        text-decoration: none;
+        color: $colorNegro;
+
+        p {
+            font-size: 14px;
+        }
+
+    }
+}

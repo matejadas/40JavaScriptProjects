@@ -20,12 +20,7 @@ h3 {
   font-size: 22px;
 }
 
-a {
-  text-decoration: none;
-  color: black;
-}
-
-a .tarjeta {
+.tarjeta {
   width: 60%;
   margin: auto;
   margin-bottom: 16px;
@@ -36,15 +31,20 @@ a .tarjeta {
           box-shadow: 6px 6px 3px Darkgray;
 }
 
-a .tarjeta:hover {
-  border: 1px solid LightGray;
-  -webkit-box-shadow: 6px 6px 3px Darkgray;
-          box-shadow: 6px 6px 3px Darkgray;
+.tarjeta:hover {
+  border: 1px solid Darkgray;
+  -webkit-box-shadow: 6px 6px 3px DimGray;
+          box-shadow: 6px 6px 3px DimGray;
   -webkit-transform: translate(-2%, -2%);
           transform: translate(-2%, -2%);
 }
 
-a .tarjeta p {
+.tarjeta a {
+  text-decoration: none;
+  color: black;
+}
+
+.tarjeta a p {
   font-size: 14px;
 }
-/*# sourceMappingURL=estilos.css.map */
+/*# sourceMappingURL=estilos_principal.css.map */
