@@ -26,6 +26,24 @@ h3 {
     font-size: 22px;
 }
 
+.botonNormal {
+    background-color: $azul;
+    color: $colorNegro;
+    border-radius: 8px;
+    padding: 5px;
+    display: flex;
+    align-items: center;
+    cursor: default;
+
+    &:hover {
+        transform: translate(-2%, -2%);
+    }
+
+    &:active {
+        transform: translate(2%, 2%);
+    }
+}
+
 #home {
     height: 4vh;
     width: 4vh;

@@ -15,24 +15,6 @@
         padding: 5px;
         font-weight: bold;
     }
-
-    #btnCambiar {
-        background-color: $azul;
-        color: $colorNegro;
-        border-radius: 8px;
-        padding: 5px;
-        display: flex;
-        align-items: center;
-        cursor: default;
-
-        &:hover {
-            transform: translate(-2%, -2%);
-        }
-
-        &:active {
-            transform: translate(2%, 2%);
-        }
-    }
 }
 
 @media (orientation: portrait) {

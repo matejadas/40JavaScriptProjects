@@ -64,48 +64,4 @@ h3 {
     width: 100%;
   }
 }
-
-#contInfo {
-  height: 6vh;
-  padding: 10px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-#contInfo #colorActual {
-  width: 30%;
-  border-radius: 8px;
-  background-color: DodgerBlue;
-  padding: 5px;
-  font-weight: bold;
-}
-
-@media (orientation: portrait) {
-  #contInfo {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-  }
-  #contInfo #colorActual {
-    width: 40%;
-    font-weight: bold;
-  }
-}
-/*# sourceMappingURL=estilos1.css.map */
+/*# sourceMappingURL=estilos2.css.map */
