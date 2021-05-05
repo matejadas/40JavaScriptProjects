@@ -1,0 +1,47 @@
+$colorNegro: black;
+$grisClaro: LightGray;
+$gris: Darkgray;
+$grisOscuro: DimGray;
+$azul: DodgerBlue;
+
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    width: 50%;
+    margin: auto;
+}
+
+h1, h2, h3 {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+h1 {
+    font-size: 28px;
+}
+
+h2 {
+    font-size: 24px;
+}
+
+h3 {
+    font-size: 22px;
+}
+
+#home {
+    height: 4vh;
+    width: 4vh;
+    margin-top: 10px;
+
+    &:hover {
+        transform: scale(1.2, 1.2);
+
+        #relleno {
+            fill: $azul;
+        }
+    }
+}
+
+@media (orientation: portrait) {
+    body {
+        width: 100%;
+    }
+}

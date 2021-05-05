@@ -20,6 +20,27 @@ h3 {
   font-size: 22px;
 }
 
+#home {
+  height: 4vh;
+  width: 4vh;
+  margin-top: 10px;
+}
+
+#home:hover {
+  -webkit-transform: scale(1.2, 1.2);
+          transform: scale(1.2, 1.2);
+}
+
+#home:hover #relleno {
+  fill: DodgerBlue;
+}
+
+@media (orientation: portrait) {
+  body {
+    width: 100%;
+  }
+}
+
 #contInfo {
   height: 6vh;
   padding: 10px;
@@ -33,7 +54,6 @@ h3 {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  border: 1px solid tomato;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -41,14 +61,17 @@ h3 {
 
 #contInfo #colorActual {
   width: 30%;
+  border-radius: 8px;
+  background-color: DodgerBlue;
+  padding: 5px;
   font-weight: bold;
 }
 
 #contInfo #btnCambiar {
-  border: 2px solid black;
-  padding: 5px;
-  border-radius: 8px;
+  background-color: DodgerBlue;
   color: black;
+  border-radius: 8px;
+  padding: 5px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -61,5 +84,28 @@ h3 {
 #contInfo #btnCambiar:hover {
   -webkit-transform: translate(-2%, -2%);
           transform: translate(-2%, -2%);
+}
+
+#contInfo #btnCambiar:active {
+  -webkit-transform: translate(2%, 2%);
+          transform: translate(2%, 2%);
+}
+
+@media (orientation: portrait) {
+  #contInfo {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  #contInfo #colorActual {
+    width: 40%;
+    font-weight: bold;
+  }
 }
 /*# sourceMappingURL=estilos1.css.map */

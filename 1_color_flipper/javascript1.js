@@ -22,24 +22,23 @@ function isLetter(string) {
 // Generamos un número hexadecimal entre 00 y FF, siempre de 2 cifras
 function generar() {
     let hexNumber = Math.round((Math.random()*255)).toString(16);
-    let result = "";
 
-    if(hexNumber < 10 || isLetter(hexNumber)) result = `0${hexNumber}`;
-    else result = hexNumber;
+    if(hexNumber < 10 || isLetter(hexNumber)) hexNumber = hexNumber.padStart(2, 0)
 
-    return result;
+    return hexNumber;
 }
 
 
 function establecerColor() {
     span.innerHTML = `#${generar()}${generar()}${generar()}`;
-    document.getElementsByTagName("body")[0].style.backgroundColor = span.innerHTML;
+    document.body.style.backgroundColor = span.innerHTML;
 }
 
 // Al cargar la página también se pondrá de un color aleatorio
 window.addEventListener("load", () => {
     establecerColor();
 })
+
 boton.addEventListener("click", () => {
     establecerColor();
 });
