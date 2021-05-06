@@ -64,4 +64,34 @@ h3 {
     width: 100%;
   }
 }
+
+@font-face {
+  src: url(../fonts/digital-7/digital-7.ttf);
+  font-family: digital7;
+}
+
+#contador {
+  width: 60%;
+  margin: auto;
+}
+
+#contador #numero {
+  font-family: digital7;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-size: 84px;
+  margin: 10%;
+}
+
+#contador #botonera {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
 /*# sourceMappingURL=estilos2.css.map */
