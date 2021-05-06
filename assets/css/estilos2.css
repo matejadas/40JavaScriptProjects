@@ -76,6 +76,7 @@ h3 {
 }
 
 #contador #numero {
+  background-color: black;
   font-family: digital7;
   display: -webkit-box;
   display: -ms-flexbox;
