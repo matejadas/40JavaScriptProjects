@@ -8,6 +8,11 @@
 #contador {
     width: 60%;
     margin: auto;
+
+    @media screen and (orientation:portrait) {
+        width: auto;
+        padding: 10px;
+    }
     
     #numero {
         background-color: black;
@@ -23,4 +28,3 @@
         justify-content: space-around;
     }
 }
-

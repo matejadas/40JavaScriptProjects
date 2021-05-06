@@ -75,6 +75,13 @@ h3 {
   margin: auto;
 }
 
+@media screen and (orientation: portrait) {
+  #contador {
+    width: auto;
+    padding: 10px;
+  }
+}
+
 #contador #numero {
   background-color: black;
   font-family: digital7;

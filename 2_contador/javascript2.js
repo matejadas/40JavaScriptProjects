@@ -17,7 +17,6 @@ window.addEventListener("load", () => {
     }
 
     comprobarColor();
-
     
     /* Incremento. Ejecutamos la acción en el mousedown y cancelamos en el mouseup
     para que se ejecute mientras está pulsado el botón*/
