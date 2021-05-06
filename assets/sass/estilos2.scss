@@ -5,26 +5,34 @@
     font-family: digital7;
 }
 
-#contador {
-    width: 60%;
-    margin: auto;
-
+body {
     @media screen and (orientation:portrait) {
         width: auto;
         padding: 10px;
     }
-    
-    #numero {
-        background-color: black;
-        font-family: digital7;
-        display: flex;
-        justify-content: center;
-        font-size: 84px;
-        margin: 10%;
-    }
 
-    #botonera {
-        display: flex;
-        justify-content: space-around;
+    #contador {
+        width: 60%;
+        margin: auto;
+
+        @media screen and (orientation:portrait) {
+            width: auto;
+            padding: 10px;
+        }
+        
+        #numero {
+            background-color: black;
+            font-family: digital7;
+            display: flex;
+            justify-content: center;
+            font-size: 84px;
+            margin: 10%;
+        }
+
+        #botonera {
+            display: flex;
+            justify-content: space-around;
+        }
     }
 }
+

@@ -70,19 +70,26 @@ h3 {
   font-family: digital7;
 }
 
-#contador {
-  width: 60%;
-  margin: auto;
-}
-
 @media screen and (orientation: portrait) {
-  #contador {
+  body {
     width: auto;
     padding: 10px;
   }
 }
 
-#contador #numero {
+body #contador {
+  width: 60%;
+  margin: auto;
+}
+
+@media screen and (orientation: portrait) {
+  body #contador {
+    width: auto;
+    padding: 10px;
+  }
+}
+
+body #contador #numero {
   background-color: black;
   font-family: digital7;
   display: -webkit-box;
@@ -95,7 +102,7 @@ h3 {
   margin: 10%;
 }
 
-#contador #botonera {
+body #contador #botonera {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
