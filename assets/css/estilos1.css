@@ -1,7 +1,13 @@
 body {
+  background-color: WhiteSmoke;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+body #app {
+  background-color: #DAEDFF;
   width: 50%;
   margin: auto;
+  padding-bottom: 5px;
 }
 
 h1, h2, h3 {
@@ -72,6 +78,7 @@ h3 {
 }
 
 #contInfo {
+  background-color: #DAEDFF;
   height: 6vh;
   padding: 10px;
   display: -webkit-box;

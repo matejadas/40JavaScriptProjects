@@ -3,11 +3,19 @@ $grisClaro: LightGray;
 $gris: Darkgray;
 $grisOscuro: DimGray;
 $azul: DodgerBlue;
+$blancoBody: WhiteSmoke;
+$azulApp: #DAEDFF;
 
 body {
+    background-color: $blancoBody;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    width: 50%;
-    margin: auto;
+
+    #app {
+        background-color: $azulApp;
+        width: 50%;
+        margin: auto;
+        padding-bottom: 5px;
+    }
 }
 
 h1, h2, h3 {

@@ -1,6 +1,7 @@
 @import "partials/common";
 
 #contInfo {
+    background-color: $azulApp;
     height: 6vh;
     padding: 10px;
     display: flex;
@@ -31,4 +32,6 @@
         }
     }
 }
+
+
 

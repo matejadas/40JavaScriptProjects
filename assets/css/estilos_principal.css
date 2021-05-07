@@ -1,7 +1,13 @@
 body {
+  background-color: WhiteSmoke;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+body #app {
+  background-color: #DAEDFF;
   width: 50%;
   margin: auto;
+  padding-bottom: 5px;
 }
 
 h1, h2, h3 {
@@ -99,14 +105,23 @@ h3 {
   font-size: 14px;
 }
 
+.tarjeta .enlaceTarjeta {
+  font-size: 14px;
+}
+
+.tarjeta .enlaceTarjeta a {
+  text-decoration: none;
+  color: DodgerBlue;
+}
+
 @media (orientation: portrait) {
-  body {
+  #app {
     padding-left: 2%;
     padding-right: 3%;
     -webkit-box-sizing: border-box;
             box-sizing: border-box;
   }
-  body .tarjeta {
+  #app .tarjeta {
     width: auto;
   }
 }
