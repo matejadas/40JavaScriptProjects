@@ -59,9 +59,15 @@ h3 {
   fill: DodgerBlue;
 }
 
-@media (orientation: portrait) {
+@media (max-width: 1024px) {
   body {
     width: 100%;
+    padding: 10px;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+  }
+  body footer {
+    justify-self: flex-end;
   }
 }
 
@@ -70,26 +76,22 @@ h3 {
   font-family: digital7;
 }
 
-@media screen and (orientation: portrait) {
-  body {
-    width: auto;
-    padding: 10px;
-  }
-}
-
-body #contador {
+#contador {
   width: 60%;
   margin: auto;
 }
 
-@media screen and (orientation: portrait) {
-  body #contador {
+@media (max-width: 1024px) {
+  #contador {
     width: auto;
     padding: 10px;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
   }
 }
 
-body #contador #numero {
+#contador #numero {
+  height: 40%;
   background-color: black;
   font-family: digital7;
   display: -webkit-box;
@@ -98,11 +100,14 @@ body #contador #numero {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   font-size: 84px;
   margin: 10%;
 }
 
-body #contador #botonera {
+#contador #botonera {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
