@@ -77,20 +77,48 @@ h3 {
   }
 }
 
-#contenedor {
-  border: 1px solid black;
+/*#navegacion {
+    border: 1px solid blue;
+}*/
+.review {
+  background-color: WhiteSmoke;
+  width: 60%;
+  margin: auto;
+  border-radius: 8px;
+  -webkit-box-shadow: 6px 6px 3px LightGray;
+          box-shadow: 6px 6px 3px LightGray;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: 8.33% ()[12];
+      grid-template-rows: 8.33% repeat(12);
 }
 
-.swiper-slide {
-  border: 1px solid red;
+.review #foto {
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 5;
+  grid-row: 1 / span 5;
 }
 
-#navegacion {
-  border: 1px solid blue;
+.review #nombre {
+  -ms-grid-row: 6;
+  -ms-grid-row-span: 2;
+  grid-row: 6 / span 2;
 }
 
-.swiper-container {
-  width: 600px;
-  height: 300px;
+.review #texto {
+  -ms-grid-row: 8;
+  -ms-grid-row-span: 3;
+  grid-row: 8 / span 3;
+}
+
+.review #navegacion {
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 2;
+  grid-row: 1 / span 2;
+}
+
+.oculto {
+  visibility: hidden;
+  height: 0vh;
 }
 /*# sourceMappingURL=estilos3.css.map */

@@ -1,20 +1,43 @@
 @import "partials/common";
 
 //prov============
-#contenedor {
-    border: 1px solid black;
-}
-.swiper-slide {
-    border: 1px solid red;
-}
-#navegacion {
+
+
+/*#navegacion {
     border: 1px solid blue;
-}
+}*/
 //==============
 
 
-.swiper-container {
-    width: 600px;
-    height: 300px;
+.review {
+    background-color: $blancoBody;
+    width: 60%;
+    margin: auto;
+    border-radius: 8px;
+    box-shadow: 6px 6px 3px $grisClaro;
+
+    display: grid;
+    grid-template-rows: 8.33% repeat(12);
+
+    #foto {
+        grid-row: 1 / span 5;
+    }
+
+    #nombre {
+        grid-row: 6 / span 2;
+    }
+
+    #texto {
+        grid-row: 8 / span 3;
+    }
+
+    #navegacion {
+        grid-row: 1 / span 2;
+    }
+}
+
+.oculto {
+    visibility: hidden;
+    height: 0vh;
 }
 
