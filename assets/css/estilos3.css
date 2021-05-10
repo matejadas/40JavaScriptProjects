@@ -80,6 +80,28 @@ h3 {
 /*#navegacion {
     border: 1px solid blue;
 }*/
+#encabezado {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 33% ()[3];
+      grid-template-columns: 33% repeat(3);
+}
+
+#encabezado #home {
+  height: 4vh;
+  width: 4vh;
+  margin-top: 10px;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 1;
+  grid-column: 1 / 2;
+}
+
+#encabezado h1 {
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 1;
+  grid-column: 2 / 3;
+}
+
 .review {
   background-color: WhiteSmoke;
   width: 60%;
@@ -93,28 +115,113 @@ h3 {
       grid-template-rows: 8.33% repeat(12);
 }
 
-.review #foto {
+.review .foto {
   -ms-grid-row: 1;
   -ms-grid-row-span: 5;
   grid-row: 1 / span 5;
+  margin: auto;
+  width: 25%;
+  background-color: DodgerBlue;
+  border-radius: 50%;
 }
 
-.review #nombre {
+.review .foto .cara {
+  -webkit-transform: translate(-5px, 5px);
+          transform: translate(-5px, 5px);
+  width: 100%;
+}
+
+.review .foto .cara img {
+  width: 100%;
+  border-radius: 50%;
+}
+
+.review .nombre {
   -ms-grid-row: 6;
   -ms-grid-row-span: 2;
   grid-row: 6 / span 2;
+  margin: auto;
+  font-weight: bold;
+  text-align: center;
 }
 
-.review #texto {
+.review .nombre .prof {
+  text-transform: uppercase;
+  color: DodgerBlue;
+  text-align: center;
+  font-weight: normal;
+}
+
+.review .texto {
   -ms-grid-row: 8;
   -ms-grid-row-span: 3;
   grid-row: 8 / span 3;
+  color: DimGray;
+  font-size: 14px;
+  padding: 5px;
 }
 
-.review #navegacion {
-  -ms-grid-row: 1;
+.review .navegacion {
+  -ms-grid-row: 11;
   -ms-grid-row-span: 2;
-  grid-row: 1 / span 2;
+  grid-row: 11 / span 2;
+  margin: auto;
+  width: 20%;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 50% 50%;
+      grid-template-columns: 50% 50%;
+  -ms-grid-rows: 50% 50%;
+      grid-template-rows: 50% 50%;
+}
+
+.review .navegacion .btnPrevious {
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 1;
+  grid-column: 1 / 2;
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 1;
+  grid-row: 1 / 2;
+}
+
+.review .navegacion .btnNext {
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 1;
+  grid-column: 2 / 3;
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 1;
+  grid-row: 1 / 2;
+}
+
+.review .navegacion .random {
+  grid-column: 1 / span2;
+  -ms-grid-row: 2;
+  -ms-grid-row-span: 1;
+  grid-row: 2 / 3;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  -ms-grid-column-align: center;
+      justify-self: center;
+}
+
+.review .navegacion img {
+  height: 80%;
+  -ms-grid-column-align: center;
+      justify-self: center;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+.review .navegacion img:hover {
+  -webkit-transform: translate(-2%, -2%);
+          transform: translate(-2%, -2%);
+}
+
+.review .navegacion img:active {
+  -webkit-transform: translate(2%, 2%);
+          transform: translate(2%, 2%);
 }
 
 .oculto {
