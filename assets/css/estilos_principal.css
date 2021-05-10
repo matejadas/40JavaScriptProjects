@@ -3,7 +3,7 @@ body {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
-body #app {
+body main {
   background-color: #DAEDFF;
   width: 50%;
   margin: auto;
@@ -115,13 +115,13 @@ h3 {
 }
 
 @media (orientation: portrait) {
-  #app {
+  main {
     padding-left: 2%;
     padding-right: 3%;
     -webkit-box-sizing: border-box;
             box-sizing: border-box;
   }
-  #app .tarjeta {
+  main .tarjeta {
     width: auto;
   }
 }
