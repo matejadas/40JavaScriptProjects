@@ -30,9 +30,9 @@
     margin: auto;
     border-radius: 8px;
     box-shadow: 6px 6px 3px $grisClaro;
-    .review {
-    
-        display: grid;
+
+    .review {    
+        display: none; // Se pondrá a grid mediante JS
         grid-template-rows: 8.33% repeat(12);
     
         .foto {

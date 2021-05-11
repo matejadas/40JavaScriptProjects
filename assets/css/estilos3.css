@@ -112,8 +112,7 @@ h3 {
 }
 
 #contReviews .review {
-  display: -ms-grid;
-  display: grid;
+  display: none;
   -ms-grid-rows: 8.33% ()[12];
       grid-template-rows: 8.33% repeat(12);
 }

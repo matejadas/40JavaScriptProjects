@@ -15,40 +15,39 @@ function validar(num) {
 function seleccionarReview(op){
   let sel = 1;
 
-  if(op === "up") sel = numSeleccionada++;
-  else if (op ==="down") sel = numSeleccionada--;
+  if(op === "up") sel = ++numSeleccionada;
+  else if (op ==="down") sel = --numSeleccionada;
   else if(op === "random") sel = Math.floor(Math.random() * 5) + 1;
 
   numSeleccionada = validar(sel);
 
-  let revSeleccionada = document.getElementById(`rev${numSeleccionada}`);
+  let container = document.querySelectorAll(".review");
 
-  console.log(numSeleccionada);
+  for(i=0; i<container.length; i++) {
 
-  return revSeleccionada;
-}
-
-function mostrarOcultar(op) {
-  let coleccion = document.getElementsByClassName("review");
-  let sel = seleccionarReview(op);
-
-
+    if(container[i].id.includes(`rev${numSeleccionada}`)) {
+      container[i].style.display = "grid";
+    }
+    else {
+      container[i].style.display = "none";
+    }
+  }
 }
 
 
 window.addEventListener("load", () => {
-  seleccionarReview("random").classList.toggle("oculto");
+  seleccionarReview("random");
   
   document.querySelector(".btnPrevious").addEventListener("click", () => {
-    seleccionarReview("down").classList.toggle("oculto");
+    seleccionarReview("down");
   });
   
   document.querySelector(".btnNext").addEventListener("click", () => {
-    seleccionarReview("up").classList.toggle("oculto");
+    seleccionarReview("up");
   });
   
   document.querySelector(".btnRandom").addEventListener("click", () => {
-    seleccionarReview("random").classList.toggle("oculto");
+    seleccionarReview("random");
   });
 
 });
