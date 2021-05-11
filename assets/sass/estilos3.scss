@@ -24,59 +24,61 @@
     }
 }
 
-.review {
+#contReviews {
     background-color: $blancoBody;
     width: 60%;
     margin: auto;
     border-radius: 8px;
     box-shadow: 6px 6px 3px $grisClaro;
-
-    display: grid;
-    grid-template-rows: 8.33% repeat(12);
-
-    .foto {
-        grid-row: 1 / span 5;
-        margin: auto;
-        width: 25%;
-        background-color: $azul;
-        border-radius: 50%;
-
-        .cara {
-            transform: translate(-5px, 5px);
-            width: 100%;
-            
-            img {
+    .review {
+    
+        display: grid;
+        grid-template-rows: 8.33% repeat(12);
+    
+        .foto {
+            grid-row: 1 / span 6;
+            margin: auto;
+            width: 25%;
+            background-color: $azul;
+            border-radius: 50%;
+    
+            .cara {
+                transform: translate(-5px, 5px);
                 width: 100%;
-                border-radius: 50%;
+                
+                img {
+                    width: 100%;
+                    border-radius: 50%;
+                }
             }
         }
-    }
-
-    .nombre {
-        grid-row: 6 / span 2;
-        margin: auto;
-        font-weight: bold;
-        text-align: center;
-
-        .prof {
-            text-transform: uppercase;
-            color: $azul;
+    
+        .nombre {
+            grid-row: 7 / span 3;
+            margin: auto;
+            font-weight: bold;
             text-align: center;
-            font-weight: normal;
+    
+            .prof {
+                text-transform: uppercase;
+                color: $azul;
+                text-align: center;
+                font-weight: normal;
+            }
         }
-    }
-
-    .texto {
-        grid-row: 8 / span 3;
-        color: $grisOscuro;
-        font-size: 14px;
-        padding: 5px;
+    
+        .texto {
+            grid-row: 10 / span 3;
+            color: $grisOscuro;
+            font-size: 14px;
+            padding: 5px;
+        }
+    
     }
 
     .navegacion {
-        grid-row: 11 / span 2;
         margin: auto;
-        width: 20%;
+        width: 30%;
         display: grid;
         grid-template-columns: 50% 50%;
         grid-template-rows: 50% 50%;
@@ -91,8 +93,8 @@
             grid-row: 1 / 2; 
         }
 
-        .random {
-            grid-column: 1 / span2;
+        .btnRandom {
+            grid-column: 1 / span 2;
             grid-row: 2 / 3;
             align-self: center;
             justify-self: center;
@@ -113,6 +115,7 @@
         }
     }
 }
+
 
 .oculto {
     visibility: hidden;
