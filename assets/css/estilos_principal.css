@@ -1,4 +1,21 @@
 body {
+  margin: 0px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100vh;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   background-color: WhiteSmoke;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
@@ -6,12 +23,44 @@ body {
 body main {
   background-color: #DAEDFF;
   width: 50%;
-  margin: auto;
-  padding-bottom: 5px;
+  padding: 10px;
+  margin-top: auto;
+}
+
+body footer {
+  background-color: LightGray;
+  width: 50%;
+  padding: 10px;
+  font-size: 14px;
+  margin-top: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+body footer .titulo {
+  font-weight: bold;
+}
+
+body footer .contacto {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-left: 10px;
+}
+
+body footer .contacto a img {
+  height: 2.8vh;
+  padding: 10px;
+}
+
+body footer .contacto a img:hover {
+  -webkit-transform: translate(-4%, -4%);
+          transform: translate(-4%, -4%);
 }
 
 h1, h2, h3 {
-  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-family: Cambria, Cochin, Georgia, 'Times New Roman', Times, serif;
 }
 
 h1 {
@@ -27,10 +76,11 @@ h3 {
 }
 
 .botonNormal {
-  background-color: DodgerBlue;
+  background-color: DeepSkyBlue;
   color: black;
   border-radius: 8px;
-  padding: 5px;
+  padding: 8px;
+  font-size: 14px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -62,7 +112,7 @@ h3 {
 }
 
 #home:hover #relleno {
-  fill: DodgerBlue;
+  fill: DeepSkyBlue;
 }
 
 @media (max-width: 1024px) {
@@ -79,6 +129,7 @@ h3 {
 
 .tarjeta {
   width: 60%;
+  background-color: WhiteSmoke;
   margin: auto;
   margin-bottom: 16px;
   border-radius: 8px;
@@ -111,7 +162,7 @@ h3 {
 
 .tarjeta .enlaceTarjeta a {
   text-decoration: none;
-  color: DodgerBlue;
+  color: DeepSkyBlue;
 }
 
 @media (orientation: portrait) {

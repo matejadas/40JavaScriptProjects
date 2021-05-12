@@ -9,6 +9,7 @@
 
 let boton = document.getElementById("btnCambiar");
 let span = document.getElementById("hex");
+let app = document.getElementById("app");
 
 // Comprobamos si lo que se ha generado es una sola letra
 function isLetter(string) {
@@ -31,7 +32,7 @@ function generar() {
 
 function establecerColor() {
     span.innerHTML = `#${generar()}${generar()}${generar()}`;
-    document.body.style.backgroundColor = span.innerHTML;
+    app.style.backgroundColor = span.innerHTML;
 }
 
 // Al cargar la página también se pondrá de un color aleatorio

@@ -1,6 +1,9 @@
 @import "partials/common";
 
-#contInfo {
+main {
+    height: 80vh;
+
+    #contInfo {
     background-color: $azulApp;
     height: 6vh;
     padding: 10px;
@@ -17,6 +20,8 @@
         font-weight: bold;
     }
 }
+}
+
 
 @media (max-width: 1024px) {
 

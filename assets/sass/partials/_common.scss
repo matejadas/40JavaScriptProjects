@@ -2,24 +2,63 @@ $colorNegro: black;
 $grisClaro: LightGray;
 $gris: Darkgray;
 $grisOscuro: DimGray;
-$azul: DodgerBlue;
-$blancoBody: WhiteSmoke;
+$azul: DeepSkyBlue;
+$blanco: WhiteSmoke;
 $azulApp: #DAEDFF;
 
+$icono: 4vh;
+
 body {
-    background-color: $blancoBody;
+    margin: 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    box-sizing: border-box;
+    background-color: $blanco;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 
     main {
         background-color: $azulApp;
         width: 50%;
-        margin: auto;
-        padding-bottom: 5px;
+        padding: 10px;
+        margin-top: auto;
+    }
+
+    footer {
+        background-color: $grisClaro;
+        width: 50%;
+        padding: 10px;
+        font-size: 14px;
+        margin-top: auto;
+        display: flex;
+        
+        .titulo {
+            font-weight: bold;
+        }
+
+        .contacto {
+            display: flex;
+            padding-left: 10px;
+
+            a {
+                img {
+                    height: $icono * 0.7;
+                    padding: 10px;
+
+                    &:hover {
+                        transform: translate(-4%, -4%);
+                    }
+                }
+            }
+
+        }   
     }
 }
 
 h1, h2, h3 {
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-family: Cambria, Cochin, Georgia, 'Times New Roman', Times, serif;
 }
 
 h1 {
@@ -38,7 +77,8 @@ h3 {
     background-color: $azul;
     color: $colorNegro;
     border-radius: 8px;
-    padding: 5px;
+    padding: 8px;
+    font-size: 14px;
     display: flex;
     align-items: center;
     cursor: default;
@@ -53,8 +93,8 @@ h3 {
 }
 
 #home {
-    height: 4vh;
-    width: 4vh;
+    height: $icono;
+    width: $icono;
     margin-top: 10px;
 
     &:hover {

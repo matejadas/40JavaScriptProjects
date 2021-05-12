@@ -15,7 +15,6 @@
     #home {
         height: 4vh;
         width: 4vh;
-        margin-top: 10px;
         grid-column: 1 / 2;
     }
 
@@ -25,7 +24,7 @@
 }
 
 #contReviews {
-    background-color: $blancoBody;
+    background-color: $blanco;
     width: 60%;
     margin: auto;
     border-radius: 8px;
