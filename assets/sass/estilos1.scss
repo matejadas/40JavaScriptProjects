@@ -1,42 +1,6 @@
 @import "partials/common";
 
-main {
-    height: 80vh;
 
-    #contInfo {
-    background-color: $azulApp;
-    height: 6vh;
-    padding: 10px;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-
-    #colorActual {
-        width: 30%;
-        border-radius: 8px;
-        background-color: $azul;
-        padding: 5px;
-        font-weight: bold;
-    }
-}
-}
-
-
-@media (max-width: 1024px) {
-
-
-    #contInfo {    
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-
-        #colorActual {
-            width: 40%;
-            font-weight: bold;
-        }
-    }
-}
 
 
 
