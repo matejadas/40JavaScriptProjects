@@ -1,6 +1,6 @@
 @font-face {
-  src: url(../../fonts/digital-7/digital-7.ttf);
-  font-family: digital7;
+  src: url("../fonts/digital-7/digital-7.ttf");
+  font-family: digital-7;
 }
 
 .botonNormal {
@@ -10,6 +10,12 @@
   padding: 5px;
   border-radius: 8px;
   cursor: default;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .botonNormal:hover {
@@ -159,6 +165,58 @@ body footer img:hover {
   }
   body footer .contacto {
     padding-left: 0px;
+  }
+}
+
+main {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (20%)[5];
+      grid-template-columns: repeat(5, 20%);
+  -ms-grid-rows: 50% 50%;
+      grid-template-rows: 50% 50%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+main #numero {
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 5;
+  grid-column: 1 / span 5;
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 1;
+  grid-row: 1 / 2;
+  -ms-grid-column-align: center;
+      justify-self: center;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  font-family: digital-7;
+  font-size: 96px;
+}
+
+main #botonera {
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 3;
+  grid-column: 2 / span 3;
+  -ms-grid-row: 2;
+  -ms-grid-row-span: 1;
+  grid-row: 2 / 3;
+  height: 15%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+@media (max-width: 1024px) {
+  main #botonera {
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 5;
+    grid-column: 1 / span 5;
   }
 }
 /*# sourceMappingURL=estilos2.css.map */

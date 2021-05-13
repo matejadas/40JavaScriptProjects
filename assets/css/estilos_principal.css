@@ -1,6 +1,6 @@
 @font-face {
-  src: url(../../fonts/digital-7/digital-7.ttf);
-  font-family: digital7;
+  src: url("../fonts/digital-7/digital-7.ttf");
+  font-family: digital-7;
 }
 
 .botonNormal {
@@ -10,6 +10,12 @@
   padding: 5px;
   border-radius: 8px;
   cursor: default;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .botonNormal:hover {
@@ -208,5 +214,21 @@ main .tarjeta:hover {
 main .tarjeta:active {
   -webkit-transform: translate(2%, 2%);
           transform: translate(2%, 2%);
+}
+
+main .tarjeta a {
+  color: black;
+  text-decoration: none;
+}
+
+main .tarjeta .enlaceTarjeta a {
+  color: DeepSkyBlue;
+}
+
+main .tarjeta .enlaceTarjeta a:hover {
+  color: black;
+  background-color: DeepSkyBlue;
+  border-radius: 3px;
+  padding: 3px;
 }
 /*# sourceMappingURL=estilos_principal.css.map */

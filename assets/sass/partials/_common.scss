@@ -12,8 +12,8 @@ $altoIcono: 4vh;
 
 // Fuentes
 @font-face {
-    src: url(../../fonts/digital-7/digital-7.ttf);
-    font-family: digital7;
+    src: url("../fonts/digital-7/digital-7.ttf");
+    font-family: digital-7;
 }
 
 // Componentes
@@ -24,6 +24,8 @@ $altoIcono: 4vh;
     padding: 5px;
     border-radius: 8px;
     cursor: default;
+    display: flex;
+    align-items: center;
 
     &:hover {
         transform: scale(1.2, 1.2);

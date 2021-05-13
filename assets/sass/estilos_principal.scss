@@ -31,5 +31,24 @@ main {
         &:active {
             transform: translate(2%, 2%);
         }
+
+        a {
+            color: $colorNegro;
+            text-decoration: none;
+
+        }
+
+        .enlaceTarjeta {
+            a {
+                color: $azul;
+
+                &:hover {
+                    color: $colorNegro;
+                    background-color: $azul;
+                    border-radius: 3px;
+                    padding: 3px;
+                }
+            }
+        }
     }
 }
