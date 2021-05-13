@@ -1,3 +1,4 @@
+// Colores
 $colorNegro: black;
 $grisClaro: LightGray;
 $gris: Darkgray;
@@ -6,5 +7,145 @@ $azul: DeepSkyBlue;
 $blanco: WhiteSmoke;
 $azulApp: #DAEDFF;
 
-$icono: 4vh;
+// Medidas
+$altoIcono: 4vh;
 
+// Fuentes
+@font-face {
+    src: url(../../fonts/digital-7/digital-7.ttf);
+    font-family: digital7;
+}
+
+// Componentes
+.botonNormal {
+    background-color: $azul;
+    font-weight: bold;
+    font-size: 16px;
+    padding: 5px;
+    border-radius: 8px;
+    cursor: default;
+
+    &:hover {
+        transform: scale(1.2, 1.2);
+        transform: translate(-3%, -3%);
+    }
+
+    &:active {
+        transform: translate(3%, 3%);
+    }
+}
+
+// CSS
+body {
+    background-color: $blanco;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 14px;
+    display: grid;
+    grid-template-rows: repeat(12, 8.33vh);
+    justify-items: center;
+
+    h1, h2, h3 {
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    }
+
+    header, main, footer {
+        width: 70%;
+        padding: 10px;
+    }
+
+    header {
+        grid-row: 1 / span 2;
+        display: grid;
+        grid-template-columns: repeat(8, 12.5%);
+        align-items: center;
+
+        a {            
+            grid-column: 1 / 2;
+
+            #home {
+                height: $altoIcono;  
+                width: 100%;
+                
+                &:hover {
+                    transform: scale(1.2, 1.2);
+
+                    #relleno {
+                        fill: $azul;
+                    }
+                }
+            }
+        }
+
+        h1 {
+            grid-column: 2 / span 7;
+        }
+    }
+
+    main {
+        grid-row: 3 / span 7;
+        overflow-y: scroll;
+        background-color: $azulApp;
+    }
+
+    footer {
+        grid-row: 10 / span 3;
+        display: flex;
+
+        .titulo {
+            font-weight: bold;
+        }
+
+        .contacto {
+            padding-left: 10px;
+            display: flex;
+        }
+
+        img {
+            height: $altoIcono * 0.6;
+            padding: 5px;
+
+            &:hover {
+                transform: scale(1.2, 1.2);
+            }
+        }
+    }
+}
+
+@media (max-width: 1024px) {
+    body {
+
+        h1 {
+            font-size: 22px;
+        }
+
+        h2 {
+            font-size: 20px;
+        }
+
+        h3 {
+            font-size: 18px;
+        }
+        header, main, footer {
+            width: 100%;
+            padding: 5px;
+        }
+
+        header {
+            grid-row: 1 / span 1;
+        }
+
+        main {
+            grid-row: 2 / span 9;
+        }
+
+        footer {
+            grid-row: 11 / span 2;
+            display: flex;
+            flex-direction: column;
+
+            .contacto {
+                padding-left: 0px;
+            }
+        }
+    }
+}

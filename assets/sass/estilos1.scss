@@ -1,6 +1,29 @@
 @import "partials/common";
 
+main {
+    display: flex;
+    justify-content: center;
+    margin: 0px;
 
+    #herramientas {
+        background-color: $blanco;
+        width: 70%;
+        height: 10%;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
 
-
-
+        @media (max-width: 1024px) {
+            width: 100%;
+            height: 8%;
+        }
+    
+        #colorActual {
+            font-size: 16px;
+    
+            #hex {
+                font-weight: bold;
+            }
+        }
+    }
+}
