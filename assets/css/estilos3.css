@@ -213,10 +213,17 @@ main .contReview {
           justify-content: space-between;
   background-color: WhiteSmoke;
   width: 70%;
-  height: 45vh;
+  height: 50vh;
   border-radius: 8px;
   padding: 10px;
   justify-items: center;
+}
+
+@media (max-width: 1024px) {
+  main .contReview {
+    width: 90%;
+    height: 50vh;
+  }
 }
 
 main .contReview .review {
