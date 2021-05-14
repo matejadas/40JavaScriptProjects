@@ -26,7 +26,7 @@ function seleccionarReview(op){
   for(i=0; i<container.length; i++) {
 
     if(container[i].id.includes(`rev${numSeleccionada}`)) {
-      container[i].style.display = "grid";
+      container[i].style.display = "flex";
     }
     else {
       container[i].style.display = "none";

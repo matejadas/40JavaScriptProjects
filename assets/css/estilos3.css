@@ -3,6 +3,18 @@
   font-family: digital-7;
 }
 
+h1 {
+  font-size: 28px;
+}
+
+h2 {
+  font-size: 26px;
+}
+
+h3 {
+  font-size: 24px;
+}
+
 .botonNormal {
   background-color: DeepSkyBlue;
   font-weight: bold;
@@ -13,6 +25,9 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -166,5 +181,124 @@ body footer img:hover {
   body footer .contacto {
     padding-left: 0px;
   }
+}
+
+main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  overflow-y: unset;
+}
+
+main .contReview {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  background-color: WhiteSmoke;
+  width: 70%;
+  height: 45vh;
+  border-radius: 8px;
+  padding: 10px;
+  justify-items: center;
+}
+
+main .contReview .review {
+  display: none;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+main .contReview .review .foto {
+  height: 15vh;
+  width: 15vh;
+  background-color: DeepSkyBlue;
+  border-radius: 50%;
+}
+
+main .contReview .review .foto img {
+  -webkit-transform: translate(-8px, 8px);
+          transform: translate(-8px, 8px);
+  border-radius: 50%;
+  height: 100%;
+  width: 100%;
+}
+
+main .contReview .review .nombre {
+  font-variant: small-caps;
+}
+
+main .contReview .review .nombre .prof {
+  color: DeepSkyBlue;
+}
+
+main .contReview .review .texto {
+  color: DimGray;
+}
+
+main .contReview .navegacion {
+  width: 25%;
+  display: -ms-grid;
+  display: grid;
+  justify-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-grid-rows: 50% 50%;
+      grid-template-rows: 50% 50%;
+  -ms-grid-columns: 50% 50%;
+      grid-template-columns: 50% 50%;
+}
+
+main .contReview .navegacion .btnPrevious {
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 1;
+  grid-row: 1 / 2;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 1;
+  grid-column: 1 / 2;
+  height: 70%;
+}
+
+main .contReview .navegacion .btnNext {
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 1;
+  grid-row: 1 / 2;
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 1;
+  grid-column: 2 / 3;
+  height: 70%;
+}
+
+main .contReview .navegacion .btnRandom {
+  -ms-grid-row: 2;
+  -ms-grid-row-span: 1;
+  grid-row: 2 / 3;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-column: 1 / span 2;
+  width: 70%;
+  height: 70%;
 }
 /*# sourceMappingURL=estilos3.css.map */

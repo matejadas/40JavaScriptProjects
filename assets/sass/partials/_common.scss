@@ -16,6 +16,18 @@ $altoIcono: 4vh;
     font-family: digital-7;
 }
 
+h1 {
+    font-size: 28px;
+}
+
+h2 {
+    font-size: 26px;
+}
+
+h3 {
+    font-size: 24px;
+}
+
 // Componentes
 .botonNormal {
     background-color: $azul;
@@ -25,6 +37,7 @@ $altoIcono: 4vh;
     border-radius: 8px;
     cursor: default;
     display: flex;
+    justify-content: center;
     align-items: center;
 
     &:hover {
@@ -127,6 +140,7 @@ body {
         h3 {
             font-size: 18px;
         }
+
         header, main, footer {
             width: 100%;
             padding: 5px;
