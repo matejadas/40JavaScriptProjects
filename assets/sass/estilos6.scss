@@ -1,0 +1,74 @@
+@import "partials/common";
+
+main {
+    background-image: url(../img/setup.jpg);
+    background-size: cover;
+    background-position-y: bottom;
+    padding: 0px !important;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+
+    .textoGris {
+        grid-row: 1;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-size: 20px;
+        color: $grisOscuro;
+    }
+
+    #contenido {
+        margin: auto;
+        width: 33%;
+        height: 50%;
+        padding: 10px;
+        background-color: $blanco;
+        border-radius: 8px;
+        grid-template-rows: 50% 50%;
+        justify-items: center;
+        align-items: center;
+        align-content: center;
+
+        #btnMostrar {
+            grid-row: 2;
+        }
+    }
+
+    #modal {
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.5);
+        //filter: blur(4px);
+
+        #mensaje {
+            margin: auto;
+            padding: 10px;
+            width: 33%;
+            height: 50%;
+            background-color: $blanco;
+            border-radius: 8px;
+            display: grid;
+            grid-template-rows: 50% 50%;
+            justify-items: center;
+            align-items: center;
+            align-content: center;
+            //filter: none;
+        }
+    }
+
+    .visible {
+        display: grid;
+    }
+
+    .fullWindow {
+        grid-row: 1 / 2;
+        grid-column: 1 / 2;
+        z-index: 2;
+        display: grid;
+        visibility: visible;
+    }
+
+    .oculto {
+        display: none;
+        visibility:hidden;
+    }
+}

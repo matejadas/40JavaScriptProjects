@@ -2,11 +2,10 @@ window.addEventListener("load", () => {
     let links = document.getElementById("links");
 
     if(window.innerWidth <= 1024) {
-        document.getElementById("size").innerHTML = window.innerWidth;
         links.className = "";
         links.classList.add("oculto");
     } else {
-        document.getElementById("size").innerHTML = window.innerWidth;
+        links.classList.remove("oculto");
         links.classList.add("grande");
     }
 });
@@ -15,11 +14,10 @@ window.addEventListener("resize", () => {
     let links = document.getElementById("links");
 
     if(window.innerWidth <= 1024) {
-        document.getElementById("size").innerHTML = window.innerWidth;
         links.className = "";
         links.classList.add("oculto");
     } else {
-        document.getElementById("size").innerHTML = window.innerWidth;
+        links.classList.remove("oculto");
         links.classList.add("grande");
     }
 });
