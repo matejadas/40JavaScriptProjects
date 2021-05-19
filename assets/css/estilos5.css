@@ -279,6 +279,11 @@ body footer img:hover {
   height: 2.4vh;
 }
 
+#sidebar #redes li img:hover {
+  -webkit-transform: scale(1.3, 1.3);
+          transform: scale(1.3, 1.3);
+}
+
 #sidebar #cerrar {
   height: 2.4vh;
 }
@@ -425,5 +430,10 @@ body footer img:hover {
       margin-left: -110vw;
     }
   }
+}
+
+.vertical {
+  -webkit-transform: rotate(-90deg);
+          transform: rotate(-90deg);
 }
 /*# sourceMappingURL=estilos5.css.map */

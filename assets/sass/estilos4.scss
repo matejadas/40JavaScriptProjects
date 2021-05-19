@@ -14,7 +14,6 @@ nav {
         padding: 0%;
         margin: 0%;
         list-style-type: none;
-        display: flex;
         justify-content: space-around;
         font-size: 18px;
 
@@ -56,6 +55,19 @@ nav {
         height: $altoIcono * 0.6;
         display: none;
     }
+        
+    .grande {
+        display: flex;
+    }
+
+    .vertical {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .oculto {
+        display: none;
+    }
 
     @media (max-width: 1024px) {
 
@@ -81,14 +93,6 @@ nav {
             display: inline-block;
         }
 
-        .visible {
-            display: flex;
-            flex-direction: column;
-        }
 
-        .oculto {
-            display: none;
-            visibility: hidden;
-        }
     }
 }
