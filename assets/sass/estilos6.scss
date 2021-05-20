@@ -28,6 +28,12 @@ main {
         align-items: center;
         align-content: center;
 
+        @media (max-width: 480px) {
+            width: 80%;
+            height: 50%;
+            padding: 5px;
+        }
+
         #btnMostrar {
             grid-row: 2;
         }
@@ -37,7 +43,6 @@ main {
         width: 100%;
         height: 100%;
         background-color: rgba(0, 0, 0, 0.5);
-        //filter: blur(4px);
 
         #mensaje {
             margin: auto;
@@ -51,7 +56,12 @@ main {
             justify-items: center;
             align-items: center;
             align-content: center;
-            //filter: none;
+
+            @media (max-width: 480px) {
+                width: 80%;
+                height: 50%;
+                padding: 5px;
+            }
         }
     }
 

@@ -221,6 +221,14 @@ main #contenido {
       align-content: center;
 }
 
+@media (max-width: 480px) {
+  main #contenido {
+    width: 80%;
+    height: 50%;
+    padding: 5px;
+  }
+}
+
 main #contenido #btnMostrar {
   -ms-grid-row: 2;
   grid-row: 2;
@@ -249,6 +257,14 @@ main #modal #mensaje {
           align-items: center;
   -ms-flex-line-pack: center;
       align-content: center;
+}
+
+@media (max-width: 480px) {
+  main #modal #mensaje {
+    width: 80%;
+    height: 50%;
+    padding: 5px;
+  }
 }
 
 main .visible {
