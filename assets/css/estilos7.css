@@ -184,115 +184,81 @@ body footer img:hover {
 }
 
 main {
-  background-image: url(../img/setup.jpg);
-  background-size: cover;
-  background-position-y: bottom;
-  padding: 0px !important;
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: 1fr;
-      grid-template-columns: 1fr;
-  -ms-grid-rows: 1fr;
-      grid-template-rows: 1fr;
-}
-
-@media (max-width: 480px) {
-  main {
-    background-position-x: center;
-  }
-}
-
-main .textoGris {
-  -ms-grid-row: 1;
-  grid-row: 1;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-  font-size: 20px;
-  color: DimGray;
-}
-
-main #contenido {
-  margin: auto;
-  width: 33%;
-  height: 50%;
-  padding: 10px;
-  background-color: WhiteSmoke;
-  border-radius: 8px;
-  -ms-grid-rows: 50% 50%;
-      grid-template-rows: 50% 50%;
-  justify-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+main .card {
+  width: 60%;
+  margin: 10px;
+  padding: 5px;
+  border-radius: 8px;
+  background-color: WhiteSmoke;
+  -webkit-box-shadow: 6px 6px 4px Darkgray;
+          box-shadow: 6px 6px 4px Darkgray;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[8];
+      grid-template-columns: repeat(8, 1fr);
+  -ms-grid-rows: auto auto;
+      grid-template-rows: auto auto;
   -ms-flex-line-pack: center;
       align-content: center;
 }
 
-@media (max-width: 480px) {
-  main #contenido {
-    width: 80%;
-    height: 50%;
-    padding: 5px;
-  }
-}
-
-main #contenido #btnMostrar {
-  -ms-grid-row: 2;
-  grid-row: 2;
-}
-
-main #modal {
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.5);
-}
-
-main #modal #mensaje {
-  margin: auto;
-  padding: 10px;
-  width: 33%;
-  height: 50%;
-  background-color: WhiteSmoke;
-  border-radius: 8px;
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-rows: 50% 50%;
-      grid-template-rows: 50% 50%;
-  justify-items: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -ms-flex-line-pack: center;
-      align-content: center;
-}
-
-@media (max-width: 480px) {
-  main #modal #mensaje {
-    width: 80%;
-    height: 50%;
-    padding: 5px;
-  }
-}
-
-main .visible {
-  display: -ms-grid;
-  display: grid;
-}
-
-main .fullWindow {
+main .card .pregunta {
   -ms-grid-row: 1;
   -ms-grid-row-span: 1;
   grid-row: 1 / 2;
   -ms-grid-column: 1;
-  -ms-grid-column-span: 1;
-  grid-column: 1 / 2;
-  z-index: 2;
-  display: -ms-grid;
-  display: grid;
-  visibility: visible;
+  -ms-grid-column-span: 7;
+  grid-column: 1 / span 7;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-size: 16px;
+  font-style: italic;
+  font-weight: 600;
+  color: DimGray;
 }
 
-main .oculto {
+main .card .icono {
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 1;
+  grid-row: 1 / 2;
+  -ms-grid-column: 8;
+  -ms-grid-column-span: 1;
+  grid-column: 8 / 9;
+  height: 2vh;
+  width: 2vh;
+  -ms-grid-column-align: center;
+      justify-self: center;
+}
+
+main .card .icono:hover {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+}
+
+main .card .respuesta {
+  -ms-grid-row: 2;
+  -ms-grid-row-span: 1;
+  grid-row: 2 / 3;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 8;
+  grid-column: 1 / span 8;
+  padding-top: 5px;
+  color: DimGray;
+}
+
+main .card .oculto {
   display: none;
   visibility: hidden;
 }
-/*# sourceMappingURL=estilos6.css.map */
+/*# sourceMappingURL=estilos7.css.map */
