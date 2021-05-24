@@ -30,8 +30,8 @@ main {
         .icono {
             grid-row: 1 / 2;
             grid-column: 8 / 9;
-            height: $altoIcono / 2;
-            width: $altoIcono / 2;
+            height: $altoIcono * 0.6;
+            width: $altoIcono * 0.6;
             justify-self: center;
 
             &:hover {

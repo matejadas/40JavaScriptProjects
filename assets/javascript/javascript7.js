@@ -1,15 +1,17 @@
-let arrIconos = document.getElementsByClassName("icono"); // HTMLCollection, array
-//let arrRespuestas = document.getElementsByClassName("respuesta");
+let app = document.getElementById("app");
+let colIconos = document.getElementsByClassName("icono"); // HTMLCollection
+let colRespuestas = document.getElementsByClassName("respuesta");
 
-window.addEventListener("click", (ev) => {
-    let selector;
+for(let i = 0; i < colIconos.length; i++) {
 
-    for(i=0; i<arrIconos.length; i++) {
-        selector = "." + arrIconos[i].className;
+    colIconos[i].addEventListener("click", () => {        
 
-        if(ev.target.matches(selector)) {
-            console.log(i);
-        }
-    }
-});
- // no funciona
+        //Desplegamos la que corresponde
+        colRespuestas[i].classList.toggle("oculto");
+    });
+
+};
+
+
+
+
