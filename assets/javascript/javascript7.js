@@ -1,17 +1,17 @@
-let app = document.getElementById("app");
-let colIconos = document.getElementsByClassName("icono"); // HTMLCollection
-let colRespuestas = document.getElementsByClassName("respuesta");
+let colIconos = document.querySelectorAll(".icono");
+let colRespuestas = document.querySelectorAll(".respuesta");
 
-for(let i = 0; i < colIconos.length; i++) {
+colIconos.forEach((icono, indiceIconos) => {
 
-    colIconos[i].addEventListener("click", () => {        
+    icono.addEventListener("click", () => {
 
-        //Desplegamos la que corresponde
-        colRespuestas[i].classList.toggle("oculto");
+        colRespuestas.forEach((respuesta, indiceResp) => {
+            
+            if(indiceResp !== indiceIconos && respuesta.className !== "oculto") {
+                respuesta.classList.add("oculto");
+            } else {
+                respuesta.classList.toggle("oculto");
+            }
+        });
     });
-
-};
-
-
-
-
+});
