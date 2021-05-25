@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @font-face {
   src: url("../fonts/digital-7/digital-7.ttf");
   font-family: digital-7;
@@ -213,81 +214,8 @@ body footer img:hover {
   }
 }
 
-nav {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: (8.33%)[12];
-      grid-template-columns: repeat(12, 8.33%);
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-nav #titulo {
-  -ms-grid-column: 1;
-  -ms-grid-column-span: 3;
-  grid-column: 1 / span 3;
-}
-
-nav #links {
-  -ms-grid-column: 4;
-  -ms-grid-column-span: 6;
-  grid-column: 4 / span 6;
-  padding: 0%;
-  margin: 0%;
-  list-style-type: none;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  font-size: 18px;
-}
-
-nav #links li a {
-  text-decoration: none;
-  color: black;
-}
-
-nav #links li a:hover {
-  font-weight: bold;
-}
-
-nav #redes {
-  padding: 0%;
-  margin: 0%;
-  -ms-grid-column: 11;
-  -ms-grid-column-span: 2;
-  grid-column: 11 / 13;
-  list-style-type: none;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-}
-
-nav #redes li a img {
-  height: 2.4vh;
-}
-
-nav #redes li a img:hover {
-  -webkit-transform: scale(1.2);
-          transform: scale(1.2);
-}
-
-nav #menu_hamb {
-  -ms-grid-column: 13;
-  grid-column: 13;
-  height: 2.4vh;
-  display: none;
-}
-
-nav .grande {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-nav .vertical {
+main {
+  width: 80% !important;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -295,44 +223,105 @@ nav .vertical {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
-nav .oculto {
-  display: none;
+main h2 {
+  text-align: center;
 }
 
-@media (max-width: 1024px) {
-  nav {
-    -ms-grid-rows: auto auto;
-        grid-template-rows: auto auto;
-  }
-  nav #titulo {
-    -ms-grid-row: 1;
-    -ms-grid-row-span: 1;
-    grid-row: 1 / 2;
-    -ms-grid-column: 1;
-    -ms-grid-column-span: 10;
-    grid-column: 1 / span 10;
-  }
-  nav #redes {
-    display: none;
-  }
-  nav #links {
-    -ms-grid-row: 2;
-    -ms-grid-row-span: 1;
-    grid-row: 2 / 3;
-    -ms-grid-column: 1;
-    -ms-grid-column-span: 12;
-    grid-column: 1 / 13;
-  }
-  nav #menu_hamb {
-    -ms-grid-row: 1;
-    -ms-grid-row-span: 1;
-    grid-row: 1 / 2;
-    -ms-grid-column: 12;
-    -ms-grid-column-span: 1;
-    grid-column: 12 / 13;
-    display: inline-block;
-  }
+main #filtros {
+  width: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 5%;
 }
-/*# sourceMappingURL=estilos4.css.map */
+
+main #platos {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  width: 100%;
+  margin: 10px;
+}
+
+main #platos .plato {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[12];
+      grid-template-columns: repeat(12, 1fr);
+  height: 20%;
+  min-width: 44%;
+  max-width: 44%;
+  margin: 3%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+main #platos .plato .foto {
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 5;
+  grid-column: 1 / 6;
+  border: 2px solid orange;
+  border-radius: 6px;
+  background-color: DimGray;
+}
+
+main #platos .plato .foto img {
+  max-width: 100%;
+}
+
+main #platos .plato .derecha {
+  -ms-grid-column: 6;
+  -ms-grid-column-span: 7;
+  grid-column: 6 / 13;
+  padding-left: 5px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: (1fr)[4];
+      grid-template-rows: repeat(4, 1fr);
+}
+
+main #platos .plato .derecha .derSup {
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 1;
+  grid-row: 1 / 2;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[6];
+      grid-template-columns: repeat(6, 1fr);
+  border-bottom: 2px solid DimGray;
+  font-weight: bold;
+}
+
+main #platos .plato .derecha .derSup .nombre {
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 5;
+  grid-column: 1 / 6;
+}
+
+main #platos .plato .derecha .derSup .precio {
+  -ms-grid-column: 6;
+  -ms-grid-column-span: 1;
+  grid-column: 6 / 7;
+  color: DeepSkyBlue;
+}
+
+main #platos .plato .derecha .derSup .precio:after {
+  content: "€";
+}
+
+main #platos .plato .derecha .descripcion {
+  -ms-grid-row: 2;
+  -ms-grid-row-span: 3;
+  grid-row: 2 / 5;
+}
+/*# sourceMappingURL=estilos8.css.map */

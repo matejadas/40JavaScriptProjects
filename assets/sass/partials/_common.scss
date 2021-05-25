@@ -6,6 +6,7 @@ $grisOscuro: DimGray;
 $azul: DeepSkyBlue;
 $blanco: WhiteSmoke;
 $azulApp: #DAEDFF;
+$naranja: orange;
 
 // Medidas
 $altoIcono: 4vh;
@@ -31,6 +32,27 @@ h3 {
 // Componentes
 .botonNormal {
     background-color: $azul;
+    font-weight: bold;
+    font-size: 16px;
+    padding: 5px;
+    border-radius: 8px;
+    cursor: default;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    &:hover {
+        transform: scale(1.2, 1.2);
+        transform: translate(-3%, -3%);
+    }
+
+    &:active {
+        transform: translate(3%, 3%);
+    }
+}
+
+.botonHueco {
+    border: 2px solid $azul;
     font-weight: bold;
     font-size: 16px;
     padding: 5px;
