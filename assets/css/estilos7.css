@@ -214,6 +214,13 @@ main .card {
       align-content: center;
 }
 
+@media (max-width: 1024px) {
+  main .card {
+    width: 90%;
+    margin: 5px;
+  }
+}
+
 main .card .pregunta {
   -ms-grid-row: 1;
   -ms-grid-row-span: 1;
@@ -226,6 +233,9 @@ main .card .pregunta {
   font-style: italic;
   font-weight: 600;
   color: DimGray;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
 }
 
 main .card .icono {
@@ -239,6 +249,13 @@ main .card .icono {
   width: 2.4vh;
   -ms-grid-column-align: center;
       justify-self: center;
+}
+
+@media (max-width: 1024px) {
+  main .card .icono {
+    height: 4vh;
+    width: 4vh;
+  }
 }
 
 main .card .icono:hover {
