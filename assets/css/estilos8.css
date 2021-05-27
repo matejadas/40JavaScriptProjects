@@ -34,6 +34,12 @@ h3 {
           align-items: center;
 }
 
+@media (max-width: 1024px) {
+  .botonNormal {
+    font-size: 12px;
+  }
+}
+
 .botonNormal:hover {
   -webkit-transform: scale(1.2, 1.2);
           transform: scale(1.2, 1.2);
@@ -62,6 +68,12 @@ h3 {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+@media (max-width: 1024px) {
+  .botonHueco {
+    font-size: 12px;
+  }
 }
 
 .botonHueco:hover {
@@ -215,7 +227,6 @@ body footer img:hover {
 }
 
 main {
-  width: 80% !important;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -270,16 +281,13 @@ main #platos .plato .foto {
   -ms-grid-column: 1;
   -ms-grid-column-span: 5;
   grid-column: 1 / 6;
-  border: 2px solid orange;
-  border-radius: 6px;
-  background-color: DimGray;
 }
 
 main #platos .plato .foto img {
   max-width: 100%;
 }
 
-main #platos .plato .derecha {
+main #platos .plato .descripcion {
   -ms-grid-column: 6;
   -ms-grid-column-span: 7;
   grid-column: 6 / 13;
@@ -290,7 +298,7 @@ main #platos .plato .derecha {
       grid-template-rows: repeat(4, 1fr);
 }
 
-main #platos .plato .derecha .derSup {
+main #platos .plato .descripcion .encabezado {
   -ms-grid-row: 1;
   -ms-grid-row-span: 1;
   grid-row: 1 / 2;
@@ -302,26 +310,76 @@ main #platos .plato .derecha .derSup {
   font-weight: bold;
 }
 
-main #platos .plato .derecha .derSup .nombre {
+main #platos .plato .descripcion .encabezado .nombre {
   -ms-grid-column: 1;
   -ms-grid-column-span: 5;
   grid-column: 1 / 6;
 }
 
-main #platos .plato .derecha .derSup .precio {
+main #platos .plato .descripcion .encabezado .precio {
   -ms-grid-column: 6;
   -ms-grid-column-span: 1;
   grid-column: 6 / 7;
   color: DeepSkyBlue;
 }
 
-main #platos .plato .derecha .derSup .precio:after {
+main #platos .plato .descripcion .encabezado .precio:after {
   content: "€";
 }
 
-main #platos .plato .derecha .descripcion {
+main #platos .plato .descripcion .texto {
   -ms-grid-row: 2;
   -ms-grid-row-span: 3;
   grid-row: 2 / 5;
+}
+
+@media (max-width: 1200px) {
+  main #filtros {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    margin-bottom: 5%;
+  }
+  main #platos {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin: 5px;
+  }
+  main #platos .plato {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    -ms-grid-rows: (1fr)[4];
+        grid-template-rows: repeat(4, 1fr);
+    min-width: 100%;
+    max-width: 100%;
+    margin: 0;
+  }
+  main #platos .plato .foto {
+    -ms-grid-column: 1;
+    grid-column: 1;
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 2;
+    grid-row: 1 / 3;
+  }
+  main #platos .plato .foto img {
+    max-height: 100%;
+  }
+  main #platos .plato .descripcion {
+    -ms-grid-column: 1;
+    grid-column: 1;
+    -ms-grid-row: 3;
+    -ms-grid-row-span: 2;
+    grid-row: 3 / 5;
+    padding-left: 0px;
+  }
+  main #platos .plato .descripcion .encabezado {
+    padding-top: 3px;
+  }
 }
 /*# sourceMappingURL=estilos8.css.map */

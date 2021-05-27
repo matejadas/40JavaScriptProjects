@@ -137,3 +137,6 @@ const menu = [
     },
 ]
 
+window.addEventListener("DOMContentLoaded", () => {
+    console.log("DOM cargado")
+})

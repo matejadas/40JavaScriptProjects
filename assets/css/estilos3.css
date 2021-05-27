@@ -33,6 +33,12 @@ h3 {
           align-items: center;
 }
 
+@media (max-width: 1024px) {
+  .botonNormal {
+    font-size: 12px;
+  }
+}
+
 .botonNormal:hover {
   -webkit-transform: scale(1.2, 1.2);
           transform: scale(1.2, 1.2);
@@ -61,6 +67,12 @@ h3 {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+@media (max-width: 1024px) {
+  .botonHueco {
+    font-size: 12px;
+  }
 }
 
 .botonHueco:hover {
