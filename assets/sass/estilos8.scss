@@ -54,6 +54,7 @@ main {
                     display: grid;
                     grid-template-columns: repeat(6, 1fr);
                     border-bottom: 2px solid $grisOscuro;
+                    font-size: 16px;
                     font-weight: bold;
 
                     .nombre {
@@ -63,6 +64,7 @@ main {
                     .precio {
                         grid-column: 6 / 7;
                         color: $azul;
+                        justify-self: right;
                         
                         &:after {
                             content: "€"
@@ -97,7 +99,7 @@ main {
                 grid-template-rows: repeat(3, 1fr);
                 min-width: 100%;
                 max-width: 100%;
-                margin: 0;
+                margin: 0px;
     
                 .foto {
                     grid-column: 1;

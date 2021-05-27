@@ -311,6 +311,7 @@ main #platos .plato .descripcion .encabezado {
   -ms-grid-columns: (1fr)[6];
       grid-template-columns: repeat(6, 1fr);
   border-bottom: 2px solid DimGray;
+  font-size: 16px;
   font-weight: bold;
 }
 
@@ -325,6 +326,8 @@ main #platos .plato .descripcion .encabezado .precio {
   -ms-grid-column-span: 1;
   grid-column: 6 / 7;
   color: DeepSkyBlue;
+  -ms-grid-column-align: right;
+      justify-self: right;
 }
 
 main #platos .plato .descripcion .encabezado .precio:after {
@@ -364,7 +367,7 @@ main #platos .plato .descripcion .texto {
         grid-template-rows: repeat(3, 1fr);
     min-width: 100%;
     max-width: 100%;
-    margin: 0;
+    margin: 0px;
   }
   main #platos .plato .foto {
     -ms-grid-column: 1;
