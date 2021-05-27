@@ -16,11 +16,16 @@ main {
         margin-bottom: 5%;
     }
 
+    #muestraFiltrado {
+        margin-bottom: 2%;
+    }
+
     #platos {
         display: flex;
         flex-wrap: wrap;
         width: 100%;
-        margin: 10px;
+        margin-left: 10px;
+        margin-right: 10px;
 
         .plato {
             display: grid;
@@ -28,8 +33,7 @@ main {
             height: 20%;
             min-width: 44%;
             max-width: 44%;
-            margin: 3%;
-            box-sizing: border-box;
+            margin: 2% 1%;
 
             .foto {
                 grid-column: 1 / 6;
@@ -85,11 +89,12 @@ main {
     
         #platos {
             flex-direction: column;
+            flex-wrap:nowrap;
             margin: 5px;
     
             .plato {
                 grid-template-columns: 1fr;
-                grid-template-rows: repeat(4, 1fr);
+                grid-template-rows: repeat(3, 1fr);
                 min-width: 100%;
                 max-width: 100%;
                 margin: 0;
@@ -105,11 +110,17 @@ main {
     
                 .descripcion {
                     grid-column: 1;
-                    grid-row: 3 / 5;
+                    grid-row: 3 / 4;
+                    grid-template-rows: repeat(6, 1fr);
                     padding-left: 0px;
 
                     .encabezado {
                         padding-top: 3px;
+                        grid-row: 1 / 2;
+                    }
+
+                    .texto {
+                        grid-row: 2 / 7;
                     }
                 }
             }

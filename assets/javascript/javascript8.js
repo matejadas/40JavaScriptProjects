@@ -138,6 +138,7 @@ const menu = [
 ];
 
 /* Controlador */
+const todos = menu;
 const desayunos = menu.filter(item => item.categoria === "desayunos");
 const pCombinados = menu.filter(item => item.categoria === "platos combinados");
 const postres = menu.filter(item => item.categoria === "postres");
@@ -169,22 +170,34 @@ function generaPlatos(arrayPlatos) {
 }
 
 /* Eventos */
-    /* Botones */
+    /* Elementos */
 let btnTodos = document.getElementById("todos");
 let btnDesayunos = document.getElementById("desayunos");
 let btnPCombinados = document.getElementById("pCombinados");
 let btnPostres = document.getElementById("postres");
+let filtrado = document.getElementById("filtrado");
 
     /* Escuchadores */
-
 window.addEventListener("DOMContentLoaded", () => {
-    // Cargamos todos los platos
-    generaPlatos(menu);
+    generaPlatos(todos);
+    filtrado.innerHTML = "todos";
 });
 
 document.addEventListener("click", (ev) => {
-    if (ev.target.matches("#todos")) generaPlatos(menu);
-    else if(ev.target.matches("#desayunos")) generaPlatos(desayunos);
-    else if(ev.target.matches("#pCombinados")) generaPlatos(pCombinados);
-    else if(ev.target.matches("#postres")) generaPlatos(postres);
+    if (ev.target.matches("#todos")) {
+        generaPlatos(todos);
+        filtrado.innerHTML = "todos";
+    }
+    else if(ev.target.matches("#desayunos")) {
+        generaPlatos(desayunos);
+        filtrado.innerHTML = "desayunos";
+    }
+    else if(ev.target.matches("#pCombinados")) {
+        generaPlatos(pCombinados);
+        filtrado.innerHTML = "platos combinados";
+    }
+    else if(ev.target.matches("#postres")) {
+        generaPlatos(postres);
+        filtrado.innerHTML = "postres";
+    }
 })

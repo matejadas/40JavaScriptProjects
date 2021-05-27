@@ -73,6 +73,7 @@ h3 {
     &:hover {
         transform: scale(1.2, 1.2);
         transform: translate(-3%, -3%);
+        background-color: $azul;
     }
 
     &:active {

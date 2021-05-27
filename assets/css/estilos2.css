@@ -80,6 +80,7 @@ h3 {
           transform: scale(1.2, 1.2);
   -webkit-transform: translate(-3%, -3%);
           transform: translate(-3%, -3%);
+  background-color: DeepSkyBlue;
 }
 
 .botonHueco:active {
