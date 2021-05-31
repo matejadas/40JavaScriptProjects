@@ -1,5 +1,10 @@
 @import "partials/common";
 
+@font-face {
+    src: url("../fonts/digital-7/digital-7.ttf");
+    font-family: digital-7;
+}
+
 main {
     display: grid;
     grid-template-columns: repeat(5, 20%);
