@@ -356,7 +356,7 @@ main #controles #btnPause path {
   fill: blue;
 }
 
-main #controles .oculto {
+.oculto {
   display: none;
   visibility: hidden;
 }
