@@ -45,9 +45,13 @@ main {
         z-index: 3;
         align-self: center;
         justify-self: center;
-        margin-top: 15%;
+        margin-top: 35%;
         height: $altoIcono * 1.2;
         width: $altoIcono * 1.2;
+
+        @media(max-width: 1024px) {
+
+        }
 
         @keyframes spinner {
             0% {
@@ -64,7 +68,6 @@ main {
             fill: $blanco;
         }
     }
-
 
     #controles {
         grid-column: 1;

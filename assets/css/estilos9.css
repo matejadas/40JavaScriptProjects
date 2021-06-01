@@ -290,7 +290,7 @@ main #preloader {
       align-self: center;
   -ms-grid-column-align: center;
       justify-self: center;
-  margin-top: 15%;
+  margin-top: 35%;
   height: 4.8vh;
   width: 4.8vh;
   -webkit-animation: 1.5s linear infinite spinner;
