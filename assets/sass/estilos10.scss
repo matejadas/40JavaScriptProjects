@@ -7,7 +7,7 @@ $grisOscuro: DimGray;
 $azul: DeepSkyBlue;
 $blanco: WhiteSmoke;
 $azulApp: #DAEDFF;
-$azulOscuro: MidnightBlue;
+$verdeOscuro: DarkGreen;
 $naranja: orange;
 
 body {
@@ -81,6 +81,10 @@ main {
             text-transform: uppercase;
             font-size: 48px;
             text-align: center;
+            color: $verdeOscuro;
+        }
+
+        #hServices {
             color: $blanco;
         }
     
@@ -126,7 +130,7 @@ footer {
     #copyright {
         grid-column: 1 / 3;
         grid-row: 1;
-        background-color: $azulOscuro;
+        background-color: $verdeOscuro;
         color: $blanco;
         font-size: 22px;
         text-align: center;
